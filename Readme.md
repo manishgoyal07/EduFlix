@@ -24,3 +24,33 @@ You may also see any lint errors in the console.
 [Click to here watch video tutorial](/)
 
 # Screenshots
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(1).png>)
+
+<!-- ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/Loungify/SS%20(1).jpg>) -->
+
+<!-- ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/Loungify/SS%20(2).jpg>) -->
+
+<!-- ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/Loungify/SS%20(3).jpg>) -->
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(2).png>)
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(3).png>)
+
+<!-- ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/Loungify/SS%20(4).jpg>) -->
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(4).png>)
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(5).png>)
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(6).png>)
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(7).png>)
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(8).png>)
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(9).png>)
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(10).png>)
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(11).png>)
