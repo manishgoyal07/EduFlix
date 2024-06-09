@@ -25,6 +25,10 @@ You may also see any lint errors in the console.
 
 # Screenshots
 
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(10).png>)
+
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(11).png>)
+
 ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(1).png>)
 
 <!-- ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/Loungify/SS%20(1).jpg>) -->
@@ -50,7 +54,3 @@ You may also see any lint errors in the console.
 ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(8).png>)
 
 ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(9).png>)
-
-![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(10).png>)
-
-![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(11).png>)
