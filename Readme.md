@@ -38,6 +38,7 @@ You may also see any lint errors in the console.
 <!-- ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/Loungify/SS%20(3).jpg>) -->
 
 ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(2).png>)
+![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(12).png>)
 
 ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(3).png>)
 
