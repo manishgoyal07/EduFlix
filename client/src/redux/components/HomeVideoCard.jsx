@@ -5,6 +5,7 @@ const HomeVideoCard = ({data}) => {
     const owner = data?.owner
     // console.log(data);
     return (
+        <div>
         <Link to={`/user/playVideo/${data?._id}`}>
             <div className="card my-4 w-80 bg-base-300 -z-10 shadow-xl " onClick={''}>
                 <figure><img src={data?.thumbnail?.url} alt="Shoes" className='mt-4 rounded-xl' /></figure>
@@ -23,8 +24,11 @@ const HomeVideoCard = ({data}) => {
                         <div className="badge badge-outline">{data?.views} Views</div>
                     </div>
                 </div>
+                
             </div>
         </Link>
+        
+        </div>
     )
 }
 
