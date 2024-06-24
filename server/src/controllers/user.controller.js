@@ -17,6 +17,8 @@ const generateAccessAndRefreshToken = async (userId) => {
 
       user.refreshToken = refreshToken; //token saved in user
 
+// Q - why have we used validateBeforeSave here?
+
       await user.save({ validateBeforeSave: false }); //token saved in Db.
       //validateBeforeSave is used because using save method, all fields of model will be kick-in as we are changing only one field, so we need this validateBeforeSave=false
       return { accessToken, refreshToken };
@@ -33,7 +35,7 @@ const registerUser = asyncHandler(async (req, res) => {
    //check weather empty or not
    //check weather user already exist? username, email
    //check for images and avatar
-   //upload them to cloudinary ,
+   //upload them to cloudinary
    //create a user object- store in db
    //check for creation
    //encrypted password and refresh token field removal
@@ -124,9 +126,9 @@ const loginUser = asyncHandler(async (req, res) => {
    // console.log(req.body);
    const userData = req.body;
    const { username, email, password } = JSON.parse(Object.keys(userData)[0]);
-   console.log(username);
-   console.log(email);
-   console.log(password);
+   // console.log(username);
+   // console.log(email);
+   // console.log(password);
    if (!(username || email)) {
       throw new ApiErrors(400, "Username or Email is required");
    }

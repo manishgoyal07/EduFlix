@@ -18,4 +18,4 @@ export { asyncHandler };
 //    }
 // };
 // higher order functions: which accept functions as higher order or can return as well
-//in short they treted it as a parameter
+//in short they treated it as a parameter

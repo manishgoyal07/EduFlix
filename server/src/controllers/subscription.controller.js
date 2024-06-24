@@ -11,13 +11,13 @@ const toggleSubscription = asyncHandler(async (req, res) => {
       throw new ApiErrors(400, "Invalid ChannelId");
    }
 
-   const subscriberAlready = await Subscription.findOne({
+   const subscribedAlready = await Subscription.findOne({
       channel: channelId,
       subscriber: req.user?._id,
    });
 
-   if (subscriberAlready) {
-      await Subscription.findByIdAndDelete(subscriberAlready?._id);
+   if (subscribedAlready) {
+      await Subscription.findByIdAndDelete(subscribedAlready?._id);
 
       return res
          .status(200)

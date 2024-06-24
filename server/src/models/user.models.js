@@ -49,7 +49,7 @@ const userSchema = new Schema(
    { timestamps: true }
 );
 //this is "Middleware"
-// ()={} we can not write arrow function, because we can't have this(context) refrence
+// ()={} we can not write arrow function, because we can't have this(context) reference
 //we want apply this event on the schema so we have to write function instead
 userSchema.pre("save", async function (next) {
    if (!this.isModified("password")) return next();

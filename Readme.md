@@ -21,7 +21,7 @@ You may also see any lint errors in the console.
 
 # Video Tutorial
 
-[Click to here watch video tutorial](/)
+[Click to here watch video tutorial](https://drive.google.com/file/d/1LG8GzwmS2GP_zPyIe3yTCqiGlvtQ-xtL/view?usp=sharing)
 
 # Screenshots
 
@@ -56,3 +56,16 @@ You may also see any lint errors in the console.
 ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(8).png>)
 
 ![SS Not Available at the Moment](<https://github.com/manishgoyal07/Assets/blob/master/EduFlix/SS%20(9).png>)
+
+I am using sessions and cookies for better security purpose
+
+Access token and Refresh tokens are used in this process.
+Access Token is not stored in database while Refresh token is stored in Db
+
+File Upload procedure:
+
+1. using multer, I will store the file temperory in my local server
+2. then using Cloudinary, I'll take that file and put it on its server
+
+We can also do it like using multer we'll take the file and put it on Cloudinary
+But in professional grade, we'll take the file temperorily on our server to re-upload in any chance

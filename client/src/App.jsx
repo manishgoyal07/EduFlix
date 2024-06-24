@@ -72,7 +72,7 @@ const App = () => {
     // }
   }, [])
   return (
-    <RouterProvider router={AppRouter} />
+    <RouterProvider router={AppRouter}/>
   )
 }
 

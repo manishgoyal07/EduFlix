@@ -25,12 +25,12 @@ const getAllVideos = asyncHandler(async (req, res) => {
          },
       });
    }
-
    if (userId) {
       if (!isValidObjectId(userId)) {
          throw new ApiErrors(400, "Invalid UserId");
       }
 
+      //we'll receive owner id as a string(stored in mongoDB) which is different from the actual id. So, we'll have to convert it to its original 
       pipeline.push({
          $match: {
             owner: new mongoose.Types.ObjectId(userId),
@@ -68,6 +68,8 @@ const getAllVideos = asyncHandler(async (req, res) => {
 const publishAVideo = asyncHandler(async (req, res) => {
    const { title, description } = req.body;
    // TODO: get video, upload to cloudinary, create video
+
+   //if any of the fields are empty
    if ([title, description].some((field) => field?.trim() === "")) {
       throw new ApiErrors(401, "All fields are required");
    }
@@ -178,14 +180,14 @@ const getVideoById = asyncHandler(async (req, res, next) => {
                      isSubscribed: {
                         $cond: {
                            if: {
-                               $and: [
-                                   { $isArray: "$subscribers" },
-                                   { $in: [req.user?._id, "$subscribers.subscriber"] }
-                               ]
+                              $and: [
+                                 { $isArray: "$subscribers" },
+                                 { $in: [req.user?._id, "$subscribers.subscriber"] }
+                              ]
                            },
                            then: true,
                            else: false,
-                       },
+                        },
                      },
                   },
                },
@@ -219,14 +221,14 @@ const getVideoById = asyncHandler(async (req, res, next) => {
             isLiked: {
                $cond: {
                   if: {
-                      $and: [
-                          { $isArray: "$likes" },
-                          { $in: [req.user?._id, "$likes?.likedBy"] }
-                      ]
+                     $and: [
+                        { $isArray: "$likes" },
+                        { $in: [req.user?._id, "$likes?.likedBy"] }
+                     ]
                   },
                   then: true,
                   else: false,
-              },
+               },
             },
          },
       },
