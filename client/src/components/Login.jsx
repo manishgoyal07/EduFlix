@@ -55,24 +55,24 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="email" placeholder="Email" onChange={e => setEmail(e.target.value)} className="input input-bordered" required />
+                                <input type="email" placeholder="Email" onChange={e => setEmail(e.target.value)} className="input input-bordered input-secondary" required />
                             </div>
                             <div className="divider">OR</div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Username</span>
                                 </label>
-                                <input type="username" placeholder="Username" onChange={e => setUserName(e.target.value)} className="input input-bordered" required />
+                                <input type="username" placeholder="Username" onChange={e => setUserName(e.target.value)} className="input input-bordered input-secondary" required />
                             </div>
                             <div className="divider"></div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} className="input input-bordered" required />
+                                <input type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} className="input input-bordered input-secondary" required />
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-info" onClick={handleSubmit}>Log In</button>
+                                <button className="btn btn-secondary" onClick={handleSubmit}>Log In</button>
                             </div>
                         </form>
                     </div>

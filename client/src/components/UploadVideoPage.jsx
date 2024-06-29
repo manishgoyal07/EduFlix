@@ -59,26 +59,26 @@ const UploadVideoPage = () => {
                                 <label className="label">
                                     <span className="label-text">Title</span>
                                 </label>
-                                <input type="title" placeholder="Title" onChange={e => setTitle(e.target.value)} className="input input-bordered" required />
+                                <input type="title" placeholder="Title" onChange={e => setTitle(e.target.value)} className="input input-bordered input-success" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Description</span>
                                 </label>
-                                <input type="description" placeholder="Description" onChange={e => setDescription(e.target.value)} className="input input-bordered" required />
+                                <input type="description" placeholder="Description" onChange={e => setDescription(e.target.value)} className="input input-bordered input-success" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Video File</span>
                                 </label>
-                                <input type="file" onChange={e => setVideoFile(e.target.files[0])} className="file-input file-input-bordered file-input-info w-full max-w-xs" />                            </div>
+                                <input type="file" onChange={e => setVideoFile(e.target.files[0])} className="file-input file-input-bordered file-input-success w-full max-w-xs" />                            </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Thumbnail File</span>
                                 </label>
-                                <input type="file" onChange={e => setThumbnailFile(e.target.files[0])} className="file-input file-input-bordered file-input-info w-full max-w-xs" />                            </div>
+                                <input type="file" onChange={e => setThumbnailFile(e.target.files[0])} className="file-input file-input-bordered file-input-success w-full max-w-xs" />                            </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-info" onClick={handleSubmit}>Publish</button>
+                                <button className="btn btn-success" onClick={handleSubmit}>Publish</button>
                             </div>
                         </form>
                     </div>

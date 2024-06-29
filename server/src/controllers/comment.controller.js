@@ -6,9 +6,9 @@ import { Video } from "../models/video.models.js";
 import { Comment } from "../models/comment.models.js";
 
 const getVideoComments = asyncHandler(async (req, res) => {
-   const { videoId } = req.params;
+   const {videoId} = req?.params;
    const { page = 1, limit = 10 } = req.query;
-
+console.log('The id is: '+ req?.params);
    if (!isValidObjectId(videoId)) {
       throw new ApiErrors(400, "Invalid videoId");
    }

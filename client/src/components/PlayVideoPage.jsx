@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import Cookies from 'js-cookie';
 import { Domain_Name } from '../../constants';
+import CommentForm from './CommentForm';
 
 const Options = () => {
     return (
@@ -19,6 +20,7 @@ const PlayVideoPage = () => {
     const [videoOwner, setVideoOwner] = useState(null);
     // const videoData = useSelector(state => state?.video?.allVideos)
     const [myVideo, setMyVideo] = useState([]);
+    const [videoComments, setVideoComments] = useState(null);
 
     const accessToken = Cookies.get('accessToken')
 
@@ -74,6 +76,7 @@ const PlayVideoPage = () => {
             setMyVideo(temp?.message)
             setIsVideoLiked(temp?.message?.isLiked)
             setVideoUsername(temp?.message?.owner?.username)
+            // getVideoData();
             console.log(videoUsername);
         } catch (err) {
             console.log(err);
@@ -83,7 +86,6 @@ const PlayVideoPage = () => {
     useEffect(() => {
         getVideoData()
         getVideoOwner()
-
     }, [params, videoUsername])
 
     return (
@@ -150,8 +152,9 @@ const PlayVideoPage = () => {
                         {/* <h4 className='m-2'>{myVideo?.views} views</h4> */}
                     </div>
 
-                    <details className="collapse bg-base-200 my-4">
-                        <summary className="collapse-title text-xl font-medium">Comments</summary>
+                    <details className="collapse bg-base-200 my-4 w-full">
+                        <summary className="collapse-title text-xl font-medium min-w-full">Comments</summary>
+                        <CommentForm/>
                         <div className="collapse-content">
                             <p>content</p>
                         </div>

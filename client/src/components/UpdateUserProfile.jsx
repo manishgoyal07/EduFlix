@@ -109,38 +109,38 @@ const UpdateUserProfile = () => {
                                 <label className="label">
                                     <span className="label-text">Change Email</span>
                                 </label>
-                                <input type="email" placeholder="Email"  onChange = {(e)=>setEmail(e.target.value)} className="input input-bordered" required />
+                                <input type="email" placeholder="Email"  onChange = {(e)=>setEmail(e.target.value)} className="input input-bordered input-error" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Change Full Name</span>
                                 </label>
-                                <input type="fullName" placeholder="Full Name" onChange = {(e)=>setFullName(e.target.value)} className="input input-bordered" required />
+                                <input type="fullName" placeholder="Full Name" onChange = {(e)=>setFullName(e.target.value)} className="input input-bordered input-error" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Enter Old Password</span>
                                 </label>
-                                <input type="oldpassword" placeholder="Old Password" onChange = {(e)=>setOldPassword(e.target.value)} className="input input-bordered" required />
+                                <input type="oldpassword" placeholder="Old Password" onChange = {(e)=>setOldPassword(e.target.value)} className="input input-bordered input-error" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Enter New Password</span>
                                 </label>
-                                <input type="newpassword" placeholder="New Password" onChange = {(e)=>setNewPassword(e.target.value)} className="input input-bordered" required />
+                                <input type="newpassword" placeholder="New Password" onChange = {(e)=>setNewPassword(e.target.value)} className="input input-bordered input-error" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Change Avatar</span>
                                 </label>
-                                <input type="file" onChange = {(e)=>setAvatar(e.target.files[0])} className="file-input file-input-bordered file-input-info w-full max-w-xs" /></div>
+                                <input type="file" onChange = {(e)=>setAvatar(e.target.files[0])} className="file-input file-input-bordered file-input-error w-full max-w-xs" /></div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Change Cover Image</span>
                                 </label>
-                                <input type="file" onChange = {(e)=>setCoverImage(e.target.files[0])} className="file-input file-input-bordered file-input-info w-full max-w-xs" /></div>
+                                <input type="file" onChange = {(e)=>setCoverImage(e.target.files[0])} className="file-input file-input-bordered file-input-error w-full max-w-xs" /></div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-info" onClick={handleSubmit}>Submit</button>
+                                <button className="btn btn-error" onClick={handleSubmit}>Submit</button>
                             </div>
                         </form>
                     </div>

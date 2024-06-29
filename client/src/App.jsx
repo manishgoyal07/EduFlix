@@ -18,6 +18,7 @@ import { AddUser } from './redux/UserSlice';
 import UploadVideoPage from './components/UploadVideoPage';
 import { setAllVideos, setFilteredVideos } from './redux/VideoSlice';
 import LandingPage from './components/LandingPage';
+import AddPostForm from './components/AddPostForm';
 
 
 const App = () => {
@@ -120,6 +121,10 @@ const AppRouter = createBrowserRouter([
       {
         path: 'uploadVideo',
         element: <UploadVideoPage />
+      },
+      {
+        path: 'uploadPost',
+        element: <AddPostForm />
       },
       {
         path: 'playVideo/:videoId',

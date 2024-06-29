@@ -90,7 +90,7 @@ const Navbar_2 = () => {
                         </div>
                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
                             <Link to='/user/uploadVideo'><li><a>Add Video</a></li></Link>
-                            <li><a>Add Post</a></li>
+                            <Link to='/user/uploadPost'><li><a>Add Post</a></li></Link>
                         </ul>
                     </div>
 
